@@ -10,6 +10,7 @@
 /* Body Styles */
 body {
   font-family: "Inter", sans-serif;
+  height: 100vh;
   line-height: 1.5;
   padding: 1rem;
   background-color: #f8f0e5;
@@ -27,16 +28,10 @@ img {
   display: grid;
   grid-template-columns: 286px 1fr;
   gap: 2px;
+  background-color: #fff;
 }
 
 /* ============= Sidebar Styles =============== */
-
-.aside-toggle {
-  position: fixed;
-  top: 1.5rem;
-  left: 1rem;
-  z-index: 2;
-}
 
 /* aside */
 .aside {
@@ -51,18 +46,9 @@ img {
   height: 100vh;
   justify-content: flex-start;
   overflow-y: auto;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
-.aside[hidden] {
-  display: none;
-}
-
-.aside-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
 
 /* Sidebar Heading  Styles */
 .dashboard-title {
@@ -127,7 +113,6 @@ img {
 main {
   margin-left: rem;
   padding: 1rem;
-  background-color: #fff;
 }
 .header {
   display: flex;
@@ -140,10 +125,21 @@ main {
 .search-container {
   /* width: 90%; */
   flex: 1;
+  position: relative;
+}
+
+.search-icon {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .search-container > input {
   padding: 1rem;
+  padding-left: 40px;
   border-radius: 8px;
   width: 100%;
   border: 1px solid;
