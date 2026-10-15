@@ -1,0 +1,223 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #f8f0e5;
+}
+
+/* General Image Styling */
+img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  display: grid;
+  grid-template-columns: 286px 1fr;
+  gap: 2px;
+}
+
+/* ============= Sidebar Styles =============== */
+
+.aside-toggle {
+  position: fixed;
+  top: 1.5rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+/* aside */
+.aside {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 3;
+  width: min(286px, 100vw);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 2rem;
+  height: 100vh;
+  justify-content: flex-start;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.aside[hidden] {
+  display: none;
+}
+
+.aside-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Sidebar Heading  Styles */
+.dashboard-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dashboard-icon {
+  color: #eca237;
+}
+
+/* Sidebar Menu links */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-menu li {
+  list-style: none;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-menu li a:checked {
+  color: inherit;
+}
+
+.sidebar-menu li a svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Sidebar Profile Image */
+.profile-container {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-container {
+  width: 50px;
+  height: 50px;
+}
+
+.image-container img {
+  border-radius: 50%;
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* ============== Main Contents Styles ============== */
+
+main {
+  margin-left: rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+.header {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+
+}
+
+/* Search input Styles */
+.search-container {
+  /* width: 90%; */
+  flex: 1;
+}
+
+.search-container > input {
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid;
+}
+
+.header-profile-container {
+  width: 50px;
+  height: 50px;
+}
+
+.header-profile-container img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* Stats Cards  */
+.greet {
+  color: #eca237;
+}
+
+.stats-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Card general Styles */
+.card {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 8px;
+  flex: 0 1 130px;
+}
+
+.card p:first-child {
+  color: #eca237;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card p:nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card p:last-child {
+  color: #9dd378;
+}
+
+/* Orders */
+.orders-section {
+  margin-top: 1.5rem;
+}
+
+.order-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-heading p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #eca237;
+}
+
+.aside {
+  position: static;
+  width: auto;
+  overflow-y: visible;
+  border: 1px solid;
+}
+/* 2 columns for tablet/desktop */
+
