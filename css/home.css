@@ -1,0 +1,64 @@
+@import 'resusable.css';
+
+/* ============== Main Contents Styles ============== */
+
+/* Greeting */
+.greeting-container {
+  margin-bottom: 1.2em;
+}
+
+.greeting-container p {
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.greet {
+  color: #eca237;
+}
+
+.card {
+  flex: 0 1 130px;
+
+}
+
+/* Orders */
+.orders-section {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-color: #d0d0d0;
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.order-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-heading p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #eca237;
+}
+
+.table {
+  width: 100%;
+}
+
+.table tr  {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* padding: 10px; */
+  text-align: left;
+  justify-content: center;
+}
+
+.table thead th {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* 2 columns for tablet/desktop */
