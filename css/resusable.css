@@ -8,36 +8,82 @@
 /* Body Styles */
 body {
   font-family: "Inter", sans-serif;
+  /* font-weight: 700; */
   line-height: 1.5;
   padding: 1rem;
-  background-color: #f8f0e5;
+  background-color: #fff;
   color: #6b6b6b;
 }
 
-/* General Image Styling */
+/* General Image Styles */
 img {
   display: block;
   max-width: 100%;
   height: 100%;
 }
 
+/* General Button Styles */
+.btn {
+  background-color: #ccc;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e6d8d8;
+  
+}
+
 /* Dashboard Styles */
 .dashboard {
   display: grid;
-  grid-template-columns: 286px 1fr;
+  grid-template-columns: 1fr;
   background-color: #fff;
 }
 
 /* ============= Sidebar Styles =============== */
 
+/* sidebar-hamburger-menu */
+
 /* aside */
+
 .aside {
   background-color: #fef8ec;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 40px;
   padding: 2rem;
   height: 100vh;
+  /* width: 100%; */
+}
+
+
+/* Hamburger menu open button */
+.sidebar-hamburger { 
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sidebar heading and close button con style */
+.dashboard-title-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: block; */
+}
+
+/* Hamburger menu close button */
+.sidebar-menu-close {
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Sidebar Heading  Styles */
@@ -67,7 +113,6 @@ img {
   list-style: none;
 }
 
-
 .sidebar-menu li a {
   padding: 7px 1rem;
   text-decoration: none;
@@ -82,9 +127,6 @@ img {
   background-color: #eca237;
   border-radius: 12px;
   color: #fff;
-}
-.sidebar-menu li a:checked {
-  color: #000;
 }
 
 .sidebar-menu li a svg {
@@ -113,15 +155,23 @@ img {
 
 /* =========== Main Content Styles ============= */
 main {
-  margin-left: 1rem;
   padding: 1rem;
+}
+
+/* Hamburger button and header styles */
+.hamburger-header-con {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 4px;
 }
 
 /* Header Styles */
 .header {
   display: flex;
   gap: 10px;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -198,7 +248,34 @@ main {
   font-size: 1rem;
 }
 
+/* ======== Desktop / Tablet Styles ======== */
 @media screen and (min-width: 768px) {
+  body {
+    background-color: #f8f0e5;
+  }
+
+  .dashboard {
+    grid-template-columns: 286px 1fr;
+  }
+
+  .aside {
+    display: flex;
+    width: 100%;
+  }
+
+  /* .dashboard-title-close {
+    display: none;
+  } */
+
+  /* sidebar-hamburger-menu */
+  .sidebar-hamburger {
+    display: none;
+  }
+
+  .sidebar-menu-close {
+    display: none;
+  }
+
   .stats-cards {
     flex-direction: row;
   }
