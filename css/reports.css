@@ -1,0 +1,129 @@
+@import url(./resusable.css);
+
+/* Text styles for the headings and paragraphs inside <section class="page-title">. */
+
+h1 {
+  color: black;
+  font-size: x-large;
+}
+p {
+  font-size: smaller;
+  font-weight: bold;
+}
+
+/* <div class="all-container"> wraps the Quick Reports heading, report cards, and date form. */
+.all-container {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 15px;
+  margin-top: 8px;
+  padding: 12px 30px;
+}
+
+/* <div class="header-contain"> holds the Quick Reports title and Download label. */
+.header-contain {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 6px 10px; */
+}
+
+/* <div class="gen-container"> groups the report cards and the date form. */
+.gen-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7px;
+  gap: 8px;
+}
+
+/* Each <div class="report-container"> is one quick report card. */
+.report-container {
+  display: flex;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 15px;
+  width: 49.5%;
+}
+
+/* Icon and text elements inside each report card. */
+.icon-contain {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: #fcd9a4;
+}
+
+.text-contain {
+  margin: 15px 15px;
+}
+
+/* <div class="bottom-container"> contains the date fields and Generate reports action. */
+.bottom-container {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 15px;
+  margin-top: 7px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Download label inside the report header. */
+.header-contain h5 {
+  border-radius: 20px;
+  background-color: #ffa328;
+  color: white;
+  width: 10%;
+  /* margin: 10px; */
+  align-content: center;
+  text-align: center;
+}
+
+/* Image inside each report-card icon. */
+.icon-contain img {
+  padding: 10px;
+}
+
+/* From/To labels above the date fields. */
+.bottom-text {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+}
+
+/* Extra spacing applied to the To label in the HTML. */
+.bottom-text .pad-text {
+  padding-right: 425px;
+}
+
+/* Row containing the two side-by-side date inputs. */
+.date-container {
+  display: flex;
+  gap: 10px;
+}
+
+.date-container input {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Full-width date input and Generate reports button in the form. */
+.bottom-container .full-width {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.bottom-container .generate {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: #ffa328;
+  color: white;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: small;
+}

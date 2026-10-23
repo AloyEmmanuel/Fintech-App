@@ -33,7 +33,6 @@ img {
 
 .btn:hover {
   background-color: #e6d8d8;
-  
 }
 
 /* Dashboard Styles */
@@ -59,9 +58,8 @@ img {
   /* width: 100%; */
 }
 
-
 /* Hamburger menu open button */
-.sidebar-hamburger { 
+.sidebar-hamburger {
   border-radius: 50%;
   border: none;
   display: flex;
