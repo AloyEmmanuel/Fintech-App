@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reports | Dashboard</title>
     <link rel="stylesheet" href="css/resusable.css" />
+    <link rel="stylesheet" href="css/reports.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -166,7 +167,12 @@
                 d="M6.5 1a5.5 5.5 0 0 1 4.437 8.749l3.556 2.846a1.351 1.351 0 1 1-1.898 1.898l-2.846-3.556A5.5 5.5 0 1 1 6.5 1m0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"
               />
             </svg>
-            <input type="search" name="search" id="search" placeholder="Search..." />
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search..."
+            />
           </div>
           <div class="header-profile-container">
             <img src="assests/images/nature.jpg" alt="Immi Memo profile" />
@@ -176,6 +182,70 @@
         <section class="page-title">
           <h1>Reports</h1>
           <p>View and download your reports.</p>
+          <div class="all-container">
+            <div class="header-contain">
+              <h1>Quick Reports</h1>
+              <h5>Download</h5>
+            </div>
+            <div class="gen-container">
+              <div class="report-container">
+                <div class="icon-contain">
+                  <img src="./assests/icons/report.png" alt="" />
+                </div>
+                <div class="text-contain">
+                  <h1>Sales Report</h1>
+                  <p>last 6 days</p>
+                </div>
+              </div>
+              <div class="report-container">
+                <div class="icon-contain">
+                  <img src="./assests/icons/user.png" alt="" />
+                </div>
+                <div class="text-contain">
+                  <h1>User Report</h1>
+                  <p>last 6 days</p>
+                </div>
+              </div>
+              <div class="report-container">
+                <div class="icon-contain">
+                  <img src="./assests/icons/sales.png" alt="" />
+                </div>
+                <div class="text-contain">
+                  <h1>Sales Report</h1>
+                  <p>last 6 days</p>
+                </div>
+              </div>
+              <div class="report-container">
+                <div class="icon-contain">
+                  <img src="./assests/icons/sales.png" alt="" />
+                </div>
+                <div class="text-contain">
+                  <h1>Sales Report</h1>
+                  <p>last 6 days</p>
+                </div>
+              </div>
+              <div class="bottom-container">
+                <h1>Quick Reports</h1>
+                <div class="bottom-text">
+                  <p>From</p>
+                  <p class="pad-text">To</p>
+                </div>
+                <div class="date-container">
+                  <input type="text" alt="" placeholder="Select date" />
+
+                  <input type="text" alt="" placeholder="Select date" />
+                </div>
+
+                <input
+                  class="full-width"
+                  type="text"
+                  id="date"
+                  placeholder="Select date"
+                />
+                <div class="generate">Generate reports</div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </section>
