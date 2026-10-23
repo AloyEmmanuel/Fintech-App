@@ -1,6 +1,6 @@
 @import url(./resusable.css);
 
-/* General Styling for h1 and p */
+/* Text styles for the headings and paragraphs inside <section class="page-title">. */
 
 h1 {
   color: black;
@@ -11,7 +11,7 @@ p {
   font-weight: bold;
 }
 
-/* Container Styling */
+/* <div class="all-container"> wraps the Quick Reports heading, report cards, and date form. */
 .all-container {
   border: 1px solid rgb(163, 163, 163);
   border-radius: 15px;
@@ -19,12 +19,14 @@ p {
   padding: 12px 30px;
 }
 
+/* <div class="header-contain"> holds the Quick Reports title and Download label. */
 .header-contain {
   display: flex;
   justify-content: space-between;
   /* margin: 6px 10px; */
 }
 
+/* <div class="gen-container"> groups the report cards and the date form. */
 .gen-container {
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +34,7 @@ p {
   gap: 8px;
 }
 
+/* Each <div class="report-container"> is one quick report card. */
 .report-container {
   display: flex;
   border: 1px solid rgb(163, 163, 163);
@@ -39,6 +42,7 @@ p {
   width: 49.5%;
 }
 
+/* Icon and text elements inside each report card. */
 .icon-contain {
   width: 50px;
   height: 50px;
@@ -52,6 +56,7 @@ p {
   margin: 15px 15px;
 }
 
+/* <div class="bottom-container"> contains the date fields and Generate reports action. */
 .bottom-container {
   border: 1px solid rgb(163, 163, 163);
   border-radius: 15px;
@@ -60,7 +65,7 @@ p {
   width: 100%;
 }
 
-/* Individual Element Styling */
+/* Download label inside the report header. */
 .header-contain h5 {
   border-radius: 20px;
   background-color: #ffa328;
@@ -71,20 +76,24 @@ p {
   text-align: center;
 }
 
+/* Image inside each report-card icon. */
 .icon-contain img {
   padding: 10px;
 }
 
+/* From/To labels above the date fields. */
 .bottom-text {
   display: flex;
   color: black;
   justify-content: space-between;
 }
 
+/* Extra spacing applied to the To label in the HTML. */
 .bottom-text .pad-text {
   padding-right: 425px;
 }
 
+/* Row containing the two side-by-side date inputs. */
 .date-container {
   display: flex;
   gap: 10px;
@@ -97,6 +106,7 @@ p {
   padding: 5px;
 }
 
+/* Full-width date input and Generate reports button in the form. */
 .bottom-container .full-width {
   margin-top: 5px;
   width: 100%;
