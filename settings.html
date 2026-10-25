@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings | Dashboard</title>
-    <link rel="stylesheet" href="css/resusable.css" />
     <link rel="stylesheet" href="css/settings.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -143,9 +142,11 @@
         </nav>
 
         <div class="profile-container">
+          <!-- Image container -->
           <div class="image-container">
-            <img src="assests/images/nature.jpg" alt="" />
+            <img src="./assests/images/nature.jpg" alt="" />
           </div>
+
           <section>
             <h3>Immi Memo</h3>
             <p>Admin</p>
@@ -182,66 +183,50 @@
         <section class="page-title">
           <h1>Setting</h1>
           <p>Manage your account and preferences.</p>
-          <div class="edit-profile">
-            <div class="image-contain">
+          <div class="card">
+            <div class="img-container">
               <img src="./assests/images/nature.jpg" alt="" />
             </div>
             <div class="text-container">
               <h1>Immi Memo</h1>
               <p>immimem@gmail.com</p>
-              <p id="box">Edit Profile</p>
+              <button class="btn">Edit Profile</button>
             </div>
           </div>
-          <div class="edit-profile">
-            <div class="set-icon">
-              <img src="./assests/icons/accountset.png" alt="" /><img
-                src="./assests/icons/notification.png"
-                alt=""
-              /><img src="./assests/icons/privacy.png" alt="" /><img
-                src="./assests/icons/help.png"
-                alt=""
-              />
-            </div>
+
+          <div class="card">
+            <div class="set-icon"></div>
             <div class="set-text">
-              <div>
-                <h4>Account Setting</h4>
-                <p>Update your personal information</p>
-                <div
-                  style="
-                    border: 0.5px solid;
-                    margin-top: 5px;
-                    margin-bottom: 8px;
-                    color: grey;
-                  "
-                ></div>
+              <div class="icon-text-con">
+                <img src="./assests/icons/accountset.png" alt="" />
+
+                <div class="text-con">
+                  <h4>Account Setting</h4>
+                  <p>Update your personal information</p>
+                </div>
               </div>
-              <div>
-                <h4>Notification Setting</h4>
-                <p>Manage your notifications</p>
-                <div
-                  style="
-                    border: 0.5px solid;
-                    margin-top: 5px;
-                    margin-bottom: 8px;
-                    color: grey;
-                  "
-                ></div>
+              <div class="icon-text-con">
+                <img src="./assests/icons/notification.png" alt="" />
+                <div class="text-con">
+                  <h4>Notification Setting</h4>
+                  <p>Manage your notifications</p>
+                </div>
               </div>
-              <div>
-                <h4>Privacy & Security</h4>
-                <p>Control your data and security</p>
-                <div
-                  style="
-                    border: 0.5px solid;
-                    margin-top: 5px;
-                    margin-bottom: 6px;
-                    color: grey;
-                  "
-                ></div>
+              <div class="icon-text-con">
+                <img src="./assests/icons/privacy.png" alt="" />
+
+                <div class="text-con">
+                  <h4>Privacy & Security</h4>
+                  <p>Control your data and security</p>
+                </div>
               </div>
-              <div>
-                <h4>Help & Support</h4>
-                <p>Get help or contact us</p>
+
+              <div class="icon-text-con">
+                <img src="./assests/icons/help.png" alt="" />
+                <div class="text-con">
+                  <h4>Help & Support</h4>
+                  <p>Get help or contact us</p>
+                </div>
               </div>
             </div>
           </div>

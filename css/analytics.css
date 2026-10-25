@@ -1,4 +1,4 @@
-@import "resusable.css";
+@import "reusable.css";
 
 .stats-cards {
   gap: 1rem;
@@ -17,6 +17,23 @@
 
 .card {
   flex: 1;
+}
+
+.card p:first-child {
+  color: #eca237;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.card p:last-child {
+  font-weight: bolder;
+  color: #83d76e;
+  font-size: 1rem;
 }
 
 .overview-breakdown {
