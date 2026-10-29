@@ -11,8 +11,7 @@ body {
   /* font-weight: 700; */
   line-height: 1.5;
   padding: 1rem;
-  background-color: #fff;
-  color: #6b6b6b;
+  background-color: #f8f0e5;
 }
 
 /* General Image Styles */
@@ -32,7 +31,7 @@ img {
 }
 
 .btn:hover {
-  background-color: #e6d8d8;
+  opacity: 1;
 }
 
 /* Dashboard Styles */
@@ -43,8 +42,6 @@ img {
 }
 
 /* ============= Sidebar Styles =============== */
-
-/* sidebar-hamburger-menu */
 
 /* aside */
 
@@ -154,6 +151,7 @@ img {
 /* =========== Main Content Styles ============= */
 main {
   padding: 1rem;
+  max-width: 100%;
 }
 
 /* Hamburger button and header styles */
@@ -224,19 +222,23 @@ main {
   width: 100%;
   border-radius: 8px;
   padding: 7px 14px;
-  border: 1px solid;
-  border-color: #d0d0d0;
+  border: 1px solid #d0d0d0;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* ======== Desktop / Tablet Styles ======== */
 @media screen and (min-width: 768px) {
-  body {
+  /* body {
     background-color: #f8f0e5;
-  }
+  } */
 
+  .stats-cards {
+    flex-direction: row;
+  }
+}
+
+/* ========= Laptop and wide screens ======== */
+@media screen and (min-width: 1024px) {
   .dashboard {
     grid-template-columns: 286px 1fr;
   }
@@ -246,10 +248,6 @@ main {
     width: 100%;
   }
 
-  /* .dashboard-title-close {
-    display: none;
-  } */
-
   /* sidebar-hamburger-menu */
   .sidebar-hamburger {
     display: none;
@@ -257,9 +255,5 @@ main {
 
   .sidebar-menu-close {
     display: none;
-  }
-
-  .stats-cards {
-    flex-direction: row;
   }
 }
