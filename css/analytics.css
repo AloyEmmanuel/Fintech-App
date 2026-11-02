@@ -36,33 +36,144 @@
   font-size: 1rem;
 }
 
+/* SVG */
+/* makes the svg shrink with the card */
+.chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* horizontal lines behind the bars */
+.grid {
+  stroke: #e6e6e6;
+  stroke-width: 1;
+}
+
+/* 0k, 5k, 10k... on the left */
+.ylabel {
+  font-size: 13px;
+  fill: #555;
+  text-anchor: end;
+}
+
+/* Monday, Tuesday... under the bars */
+.xlabel {
+  font-size: 13px;
+  fill: #555;
+  text-anchor: middle;
+}
+
+/* saturday's bar is the darker one.
+  css beats the fill="" attribute on the rect, so this just works */
+.top {
+  fill: #d98206;
+}
+
+/* small hover feedback */
+.chart rect {
+  transition: opacity 0.2s;
+}
+
+.chart rect:hover {
+  opacity: 0.8;
+}
+
 .overview-breakdown {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
   margin-top: 1rem;
+}
+
+/* Traffic source Chart */
+.traffic-source-heading {
+  margin-bottom: 0.5rem;
+}
+
+/* donut on the left, legend on the right */
+.traffic {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.donut {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+}
+
+/* both circles share the same size, only the colour and dash change */
+.ring {
+  fill: none;
+  stroke-width: 18;
+}
+
+.ring-base {
+  stroke: #ffa229;
+}
+.ring-light {
+  stroke: #ffc46b;
+}
+
+/* legend */
+.legend {
+  list-style: none;
+  flex: 1;
+  color: #555591;
+
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  padding: 9px 0;
+}
+
+.legend .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d98206;
+}
+
+.legend .name {
+  flex: 1;
 }
 
 .table {
   width: 100%;
 }
 
+.table-heading {
+  margin-bottom: 0.5rem;
+}
+
 .table tr {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   /* justify-content: space-between; */
   text-align: left;
   gap: 1rem;
+  color: #555591;
 }
 
-.table thead tr{
-    background-color: #f7f7f7;
-    padding: 5px 1rem;
+.table thead tr {
+  background-color: #f7f7f7;
+  padding: 5px 1rem;
+  font-weight: 500;
 }
 
-.table tbody tr td:last-child{
-    color: #83d76e;
-    font-weight: 500;
+.table tbody tr {
+  padding-left: 14px;
+}
+
+.table tbody tr td:last-child {
+  color: #83d76e;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,6 +189,5 @@
 /* @media screen and (min-width: 1024px) {
     .table tr {
         grid-template-columns: repeat(3, 1fr);
-    }
-    
+    }  
 } */

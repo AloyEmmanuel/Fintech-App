@@ -198,10 +198,11 @@ main {
 
 .search-container input {
   padding: 1rem;
-  padding-left: 2.5rem;
-  border-radius: 0.5rem;
+  padding-left: 3rem;
+  border-radius: 12px;
   width: 100%;
   border: 1px solid #d0d0d0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 .search-container input:focus {
@@ -246,6 +247,7 @@ main {
   .aside {
     display: flex;
     width: 100%;
+    height: auto;
   }
 
   /* sidebar-hamburger-menu */

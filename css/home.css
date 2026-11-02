@@ -1,4 +1,4 @@
-@import 'reusable.css';
+@import "reusable.css";
 
 /* ============== Main Contents Styles ============== */
 
@@ -37,6 +37,51 @@
   font-size: 1rem;
 }
 
+/* SVG */
+/* each chart sits inside one of these boxes */
+.bar-chart{
+  margin-top: 1.5rem;
+}
+
+.chart {
+  height: auto;
+  display: block;
+}
+
+/* svg text + lines are styled with css like normal elements */
+.grid {
+  stroke: #e6e6e6;
+  stroke-width: 1;
+}
+
+.ylabel {
+  font-size: 13px;
+  fill: #555;
+  text-anchor: end;
+}
+
+.xlabel {
+  font-size: 13px;
+  fill: #555;
+  text-anchor: middle;
+}
+
+/* line chart */
+.line {
+  fill: none;
+  stroke: #e8960f;
+  stroke-width: 2;
+}
+
+.dots circle {
+  fill: #d98206;
+}
+
+/* bar chart: saturday gets the darker bar */
+.top {
+  fill: #d98206 ;
+}
+
 /* Orders */
 .orders-section {
   margin-top: 1.5rem;
@@ -63,13 +108,17 @@
   width: 100%;
 }
 
-.table tr  {
+.table tr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* padding: 10px; */
   text-align: left;
-  justify-content: center;
+  
 }
+
+.table tbody tr {
+  padding-left: 14px;
+}
+
 
 .table thead th {
   background-color: #f7f7f7;
@@ -82,5 +131,4 @@
   .card {
     flex: 0 1 130px;
   }
-  
 }

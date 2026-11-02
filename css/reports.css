@@ -2,6 +2,10 @@
 
 /* Text styles for the headings and paragraphs inside <section class="page-title">. */
 
+.page-title {
+  margin-bottom: 20px;
+}
+
 .page-title h1 {
   color: black;
   font-size: x-large;
@@ -20,33 +24,29 @@ main {
 .all-container {
   border: 1px solid rgb(163, 163, 163);
   border-radius: 15px;
-  margin-top: 0.5rem;
-  padding: 12px 1rem;
-  max-width: 100%;
+  padding:  1rem;
 }
 
 /* <div class="header-contain"> holds the Quick Reports title and Download label. */
 .header-contain {
   display: flex;
   justify-content: space-between;
-  /* margin: 6px 10px; */
 }
 
 /* <div class="gen-container"> groups the report cards and the date form. */
 .gen-container {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
-  /* margin-top: px; */
   gap: 0.5rem;
+  margin-top: 0.5rem;
   width: 100%;
-  padding: 1rem;
+
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem;
+  gap: 12px;
 }
 
 /* Each <div class="report-container"> is one quick report card. */
@@ -54,7 +54,6 @@ main {
   flex: 1;
   display: flex;
   border-radius: 15px;
-  /* width: 49.5%; */
   padding: 0.5rem;
 }
 
@@ -63,8 +62,6 @@ main {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* margin-top: 10px;
-  margin-left: 15px; */
   background-color: #fcd9a4;
 }
 
@@ -168,6 +165,10 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .all-container {
+  padding: 12px 1rem;
+  }
+
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }

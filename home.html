@@ -274,7 +274,67 @@
         </section>
 
         <!-- Graph -->
-        <section></section>
+        <section class="card bar-chart">
+          <svg
+            class="chart"
+            viewBox="0 0 820 310"
+            role="img"
+            aria-label="Sales this week, line chart"
+          >
+            <defs>
+              <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffa229" stop-opacity="0.75" />
+                <stop offset="100%" stop-color="#ffa229" stop-opacity="0.08" />
+              </linearGradient>
+            </defs>
+
+            <g>
+              <line x1="70" x2="790" y1="260" y2="260" class="grid" />
+              <text x="55" y="264" class="ylabel">0k</text>
+              <line x1="70" x2="790" y1="200" y2="200" class="grid" />
+              <text x="55" y="204" class="ylabel">5k</text>
+              <line x1="70" x2="790" y1="140" y2="140" class="grid" />
+              <text x="55" y="144" class="ylabel">10k</text>
+              <line x1="70" x2="790" y1="80" y2="80" class="grid" />
+              <text x="55" y="84" class="ylabel">15k</text>
+              <line x1="70" x2="790" y1="20" y2="20" class="grid" />
+              <text x="55" y="24" class="ylabel">20k</text>
+              <text x="100" y="292" class="xlabel">Monday</text>
+              <text x="232" y="292" class="xlabel">Tuesday</text>
+              <text x="364" y="292" class="xlabel">Wednesday</text>
+              <text x="496" y="292" class="xlabel">Thursday</text>
+              <text x="628" y="292" class="xlabel">Friday</text>
+              <text x="760" y="292" class="xlabel">Saturday</text>
+            </g>
+
+            <!-- filled area under the curve -->
+            <path
+              d="M100,206 C111,208 144,229 166,218 C188,207 210,149 232,140 C254,131 276,174 298,166 C320,159 342,98 364,94 C386,91 408,138 430,144 C452,149 474,126 496,128 C518,130 540,153 562,154 C584,156 606,149 628,138 C650,126 672,103 694,87 C716,71 749,48 760,40 L760,260 L100,260 Z"
+              fill="url(#areaFill)"
+            />
+
+            <!-- the curve itself -->
+            <path
+              class="line"
+              d="M100,206 C111,208 144,229 166,218 C188,207 210,149 232,140 C254,131 276,174 298,166 C320,159 342,98 364,94 C386,91 408,138 430,144 C452,149 474,126 496,128 C518,130 540,153 562,154 C584,156 606,149 628,138 C650,126 672,103 694,87 C716,71 749,48 760,40"
+            />
+
+            <!-- data points -->
+            <g class="dots">
+              <circle cx="100" cy="206" r="3.5" />
+              <circle cx="166" cy="218" r="3.5" />
+              <circle cx="232" cy="140" r="3.5" />
+              <circle cx="298" cy="166" r="3.5" />
+              <circle cx="364" cy="94" r="3.5" />
+              <circle cx="430" cy="144" r="3.5" />
+              <circle cx="496" cy="128" r="3.5" />
+              <circle cx="562" cy="154" r="3.5" />
+              <circle cx="628" cy="138" r="3.5" />
+              <circle cx="694" cy="87" r="3.5" />
+              <circle cx="760" cy="40" r="3.5" />
+            </g>
+          </svg>
+        </section>
 
         <!-- Orders -->
         <section class="orders-section">

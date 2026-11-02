@@ -2,10 +2,17 @@
 
 /* <section class="page-title"> heading and description. */
 
+.page-title {
+  margin-bottom: 20px;
+  
+}
+
 .page-title h1 {
   color: black;
 }
 .page-title > p {
+  color: #555591;
+  font-weight: 500;
   font-size: small;
 }
 
@@ -16,11 +23,9 @@
   margin-top: 10px;
   padding: 10px;
   border: 1px solid gray;
-  /* height: 120px; */
   border-radius: 12px;
-  /* justify-content: center;
-  align-items: center; */
 }
+
 /* <div class="image-contain"> and its profile image. */
 .img-container {
   width: 80px;
@@ -31,15 +36,16 @@
 .img-container img {
   border-radius: 50%;
   width: 100%;
-  /* height: 100%; */
 }
 /* <div class="text-container"> holds the profile name, email, and Edit Profile label. */
 .text-container {
   padding: 8px 8px;
   color: black;
 }
+
 .text-container > p {
   font-size: small;
+  margin-bottom: 0.5rem;
 }
 
 .profile-btn {
@@ -58,7 +64,6 @@
 .icon-text-con img {
   width: 28px;
   height: 28px;
-
 }
 
 .icon-text-con {
@@ -85,10 +90,6 @@
  .set-text {
    width: 100%;
    padding:0 18px;
-
-  /* margin: 10px;
-  color: black;
-  height: 100px;  */
 } 
 
 .set-text h4 {
@@ -102,7 +103,7 @@
 /* <div class="log-out"> contains the logout icon and label. */
 .log-out {
   display: flex;
-  margin-top: 8px;
+  margin-top: 12px;
   padding: 5px;
   border: 1px solid rgb(250 219 223);
   border-radius: 10px;
