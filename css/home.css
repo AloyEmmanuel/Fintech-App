@@ -12,7 +12,7 @@
   font-size: 12px;
 }
 
-.greet {
+.name {
   color: #eca237;
 }
 
@@ -37,8 +37,7 @@
   font-size: 1rem;
 }
 
-/* SVG */
-/* each chart sits inside one of these boxes */
+/* Bar Chart */
 .bar-chart{
   margin-top: 1.5rem;
 }
@@ -48,7 +47,6 @@
   display: block;
 }
 
-/* svg text + lines are styled with css like normal elements */
 .grid {
   stroke: #e6e6e6;
   stroke-width: 1;
@@ -83,13 +81,8 @@
 }
 
 /* Orders */
-.orders-section {
+.orders {
   margin-top: 1.5rem;
-  padding: 1rem;
-  border: 1px solid;
-  border-color: #d0d0d0;
-  border-radius: 8px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .order-heading {
@@ -98,7 +91,7 @@
   align-items: center;
 }
 
-.order-heading p {
+.order-heading p:last-child{
   font-size: 12px;
   font-weight: 700;
   color: #eca237;
@@ -111,12 +104,15 @@
 .table tr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  
   text-align: left;
   
 }
 
 .table tbody tr {
   padding-left: 14px;
+  margin-top: 5px;
+  margin-bottom: 14px;
 }
 
 
@@ -124,6 +120,30 @@
   background-color: #f7f7f7;
   padding: 10px;
   border-radius: 3px;
+}
+
+.pending {
+  background-color: #fed6a5;
+  color: #e7b864;
+  text-align: center;
+  /* padding: 3px px; */
+  border-radius: 35px;
+}
+
+.shipped {
+  background-color: #89e0fb;
+  color: #34b2cb;
+  text-align: center;
+  /* padding: 3px px; */
+  border-radius: 35px;
+}
+
+.delivered {
+  background-color: #b5f595;
+  color: #86e65e;
+  text-align: center;
+  /* padding: 3px px; */
+  border-radius: 35px;
 }
 
 /* 2 columns for tablet/desktop */

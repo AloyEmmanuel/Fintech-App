@@ -1,6 +1,9 @@
 @import "reusable.css";
 
 /* Text styles for the headings and paragraphs inside <section class="page-title">. */
+main {
+  overflow: hidden;
+}
 
 .page-title {
   margin-bottom: 20px;
@@ -15,16 +18,20 @@
   font-weight: bold;
 }
 
-main {
-  /* container-type: size; */
-  overflow: hidden;
-}
-
 /* <div class="all-container"> wraps the Quick Reports heading, report cards, and date form. */
 .all-container {
   border: 1px solid rgb(163, 163, 163);
   border-radius: 15px;
-  padding:  1rem;
+  padding: 1rem;
+}
+
+/* Download label inside the report header. */
+.download-btn {
+  border-radius: 25px;
+  background-color: #ffa328;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: 600;
 }
 
 /* <div class="header-contain"> holds the Quick Reports title and Download label. */
@@ -35,18 +42,19 @@ main {
 
 /* <div class="gen-container"> groups the report cards and the date form. */
 .gen-container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 0.5rem;
   width: 100%;
-
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 /* Each <div class="report-container"> is one quick report card. */
@@ -78,12 +86,6 @@ main {
   width: 100%;
 }
 
-/* Download label inside the report header. */
-.download-btn {
-  border-radius: 20px;
-  background-color: #ffa328;
-  color: #fff;
-}
 
 /* Image inside each report-card icon. */
 .icon-contain img {
@@ -166,13 +168,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .all-container {
-  padding: 12px 1rem;
+    padding: 12px 1rem;
   }
 
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .inputs-desktop {
     display: flex;
     gap: 0.5rem;
